@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start ScreenVC-->
+        <scene sceneID="rzP-mr-XhE">
+            <objects>
+                <viewController storyboardIdentifier="StartScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SKH-kw-0OD" customClass="StartScreenVC" customModule="Pandy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ia6-fe-prK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3L-sY-e1c">
+                                <rect key="frame" x="0.0" y="225.5" width="414" height="285.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_panda_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Clq-ee-10r">
+                                        <rect key="frame" x="143" y="24" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="TPh-Ua-dBv"/>
+                                            <constraint firstAttribute="height" constant="128" id="b7r-m6-swd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB9-sD-kWv">
+                                        <rect key="frame" x="16" y="184" width="382" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" red="0.24705882352941178" green="0.28235294117647058" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Я справился со стрессом и обрел счастье. Хочешь так же?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPL-yz-ia5">
+                                        <rect key="frame" x="16" y="231" width="382" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.2470588235" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="bPL-yz-ia5" firstAttribute="leading" secondItem="x3L-sY-e1c" secondAttribute="leading" constant="16" id="0Az-EB-HtV"/>
+                                    <constraint firstItem="Clq-ee-10r" firstAttribute="centerX" secondItem="x3L-sY-e1c" secondAttribute="centerX" id="0Ee-S4-oqv"/>
+                                    <constraint firstItem="KB9-sD-kWv" firstAttribute="top" secondItem="Clq-ee-10r" secondAttribute="bottom" constant="32" id="2ca-zv-1zK"/>
+                                    <constraint firstAttribute="bottom" secondItem="bPL-yz-ia5" secondAttribute="bottom" constant="16" id="CoZ-ir-OEv"/>
+                                    <constraint firstItem="Clq-ee-10r" firstAttribute="top" secondItem="x3L-sY-e1c" secondAttribute="top" constant="24" id="Dfm-51-Lmb"/>
+                                    <constraint firstItem="bPL-yz-ia5" firstAttribute="top" secondItem="KB9-sD-kWv" secondAttribute="bottom" constant="18" id="WD3-Je-xKc"/>
+                                    <constraint firstItem="KB9-sD-kWv" firstAttribute="leading" secondItem="x3L-sY-e1c" secondAttribute="leading" constant="16" id="Wkj-8n-kBw"/>
+                                    <constraint firstAttribute="trailing" secondItem="KB9-sD-kWv" secondAttribute="trailing" constant="16" id="f8C-rj-w0O"/>
+                                    <constraint firstItem="KB9-sD-kWv" firstAttribute="centerX" secondItem="x3L-sY-e1c" secondAttribute="centerX" id="oTj-fc-gXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="bPL-yz-ia5" secondAttribute="trailing" constant="16" id="tyX-dg-hQI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-qB-de4">
+                                <rect key="frame" x="16" y="786" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z2n-i8-JK3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Уже есть аккаунт">
+                                    <color key="titleColor" red="0.4941176471" green="0.46274509800000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfv-Ae-VE6">
+                                <rect key="frame" x="16" y="726" width="382" height="44"/>
+                                <color key="backgroundColor" red="0.4941176471" green="0.46274509800000002" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fSt-K8-03h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Готов начать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rfv-Ae-VE6" firstAttribute="leading" secondItem="fAP-3S-5U2" secondAttribute="leading" constant="16" id="25l-JJ-i5u"/>
+                            <constraint firstItem="fAP-3S-5U2" firstAttribute="trailing" secondItem="cLO-qB-de4" secondAttribute="trailing" constant="16" id="OG6-CD-KRP"/>
+                            <constraint firstItem="cLO-qB-de4" firstAttribute="top" secondItem="Rfv-Ae-VE6" secondAttribute="bottom" constant="16" id="SsI-sc-pGC"/>
+                            <constraint firstItem="x3L-sY-e1c" firstAttribute="centerY" secondItem="Ia6-fe-prK" secondAttribute="centerY" constant="-80" id="aYW-9s-2Xq"/>
+                            <constraint firstItem="fAP-3S-5U2" firstAttribute="trailing" secondItem="x3L-sY-e1c" secondAttribute="trailing" id="buD-ln-Xyb"/>
+                            <constraint firstItem="fAP-3S-5U2" firstAttribute="trailing" secondItem="Rfv-Ae-VE6" secondAttribute="trailing" constant="16" id="iKU-G4-g1d"/>
+                            <constraint firstItem="cLO-qB-de4" firstAttribute="leading" secondItem="fAP-3S-5U2" secondAttribute="leading" constant="16" id="lt4-jn-WLa"/>
+                            <constraint firstItem="x3L-sY-e1c" firstAttribute="leading" secondItem="fAP-3S-5U2" secondAttribute="leading" id="oM4-6e-iny"/>
+                            <constraint firstItem="fAP-3S-5U2" firstAttribute="bottom" secondItem="cLO-qB-de4" secondAttribute="bottom" constant="32" id="vJJ-iP-vwz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fAP-3S-5U2"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnHaveAccount" destination="cLO-qB-de4" id="SeA-E8-fTT"/>
+                        <outlet property="btnReady" destination="Rfv-Ae-VE6" id="D0e-Pl-Syl"/>
+                        <outlet property="lbHello" destination="KB9-sD-kWv" id="6Ht-Ix-VYU"/>
+                        <outlet property="lbSubtitle" destination="bPL-yz-ia5" id="Mrf-8Y-QH3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqc-eJ-2iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="-39"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboarding_panda_icon" width="128" height="128"/>
+    </resources>
+</document>

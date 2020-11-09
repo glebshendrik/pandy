@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-zT-PqK" customClass="SortPopupItemView" customModule="Pandy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="141"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сначала новые" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAw-JG-jMD">
+                    <rect key="frame" x="20" y="60.5" width="122.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2470588235" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sort_check_icon" translatesAutoresizingMaskIntoConstraints="NO" id="90f-Pt-sPO">
+                    <rect key="frame" x="374" y="56.5" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="39S-Ql-Cyu"/>
+                        <constraint firstAttribute="height" constant="28" id="zTE-GD-1wK"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20V-Wl-nc7">
+                    <rect key="frame" x="20" y="140" width="402" height="1"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yNH-3M-eT0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GAw-JG-jMD" firstAttribute="centerY" secondItem="iJg-zT-PqK" secondAttribute="centerY" id="BzK-wL-Kvc"/>
+                <constraint firstItem="GAw-JG-jMD" firstAttribute="leading" secondItem="iJg-zT-PqK" secondAttribute="leading" constant="20" id="Glo-7A-Lmn"/>
+                <constraint firstAttribute="trailing" secondItem="90f-Pt-sPO" secondAttribute="trailing" constant="20" id="H22-uT-HtS"/>
+                <constraint firstItem="90f-Pt-sPO" firstAttribute="centerY" secondItem="iJg-zT-PqK" secondAttribute="centerY" id="L78-4l-iJu"/>
+                <constraint firstAttribute="bottom" secondItem="20V-Wl-nc7" secondAttribute="bottom" id="b20-OF-Yhz"/>
+                <constraint firstAttribute="trailing" secondItem="20V-Wl-nc7" secondAttribute="trailing" id="b9J-8O-kVu"/>
+                <constraint firstItem="20V-Wl-nc7" firstAttribute="leading" secondItem="iJg-zT-PqK" secondAttribute="leading" constant="20" id="ioR-OE-AJj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="uOu-Z5-mtH"/>
+            <connections>
+                <outlet property="ivCheckIcon" destination="90f-Pt-sPO" id="57o-Cq-Qhn"/>
+                <outlet property="lbTitle" destination="GAw-JG-jMD" id="9QY-FB-xhd"/>
+            </connections>
+            <point key="canvasLocation" x="-114" y="-310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sort_check_icon" width="20" height="14"/>
+    </resources>
+</document>
